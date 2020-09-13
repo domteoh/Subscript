@@ -171,15 +171,15 @@ overflow-x: hidden;
   }
 
   .footer {
-    padding: 18px 0 0 0!important;
+    padding: 1vh 0!important;
   }
 
   .footer-fixed {
-    padding: 18px 0 0 0!important;
+    padding: 1vh 0!important;
   }
 
   h6 {
-    margin-bottom: 5%!important;
+    margin-bottom: 0!important;
   }
 
 
