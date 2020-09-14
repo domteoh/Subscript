@@ -33,7 +33,7 @@ overflow-x: hidden;
   .landing {
     position: fixed;
     height: 100vh;
-    background-image: url(img/batik.png);
+    background-image: url(img/.jpg);
     background-size: cover;
     background-position: center;
     display: inline-block!important;
@@ -376,14 +376,14 @@ overflow-x: hidden;
 
 /*Image formatting*/
 .landing-img {
-  width: 70%;
-  margin: 38vh 15% 0 15%;
+  width: 50%;
+  margin: 35vh 25% 0 25%;
 }
 
 .arrow {
   width: 10%;
   height: auto;
-  margin: 30vh 45% 0 45%;
+  margin: 25vh 45% 0 45%;
 }
 
 .header-logo {
