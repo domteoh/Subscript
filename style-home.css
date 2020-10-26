@@ -456,7 +456,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   font-size: 15px;
   line-height: 20px;
@@ -482,14 +482,14 @@ h3 {
 }
 
 h4 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 20px;
   text-align: left;
 }
 
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 20px;
   text-align: center;
@@ -505,7 +505,7 @@ h5 {
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   font-size: 15px;
   text-align: left;
