@@ -157,6 +157,22 @@ overflow-x: hidden;
     overflow: auto;
   }
 
+  #banner .page-content .content-media {
+    width: 100%!important;
+    margin: 0 0!important;
+    vertical-align: top;
+    align: center;
+    overflow: auto;
+  }
+
+  #banner .page-content .content-main-media {
+    width: 100%!important;
+    margin: 0 0!important;
+    vertical-align: top;
+    align: center;
+    overflow: auto;
+  }
+
   #banner .watch-main .watch-box .watch-img {
     width: 90%!important;
     margin: 2px 0 0 0!important;
@@ -168,6 +184,10 @@ overflow-x: hidden;
     margin: 2px 0 10% 2%!important;
     display: inline-block;
     vertical-align: top;
+  }
+
+  .content-img-inline-block {
+    width: 100%!important;
   }
 
   .footer {
@@ -339,7 +359,23 @@ overflow-x: hidden;
 #banner .page-content {
   width: 100%;
   margin-top: 2%;
-  padding: 0 20% 80px 20%;
+  padding: 0 25% 80px 25%;
+  vertical-align: top;
+  align: center;
+  overflow: auto;
+}
+
+#banner .page-content .content-media {
+  width: 80%;
+  margin: 0 10%;
+  vertical-align: top;
+  align: center;
+  overflow: auto;
+}
+
+#banner .page-content .content-main-media {
+  width: 60%;
+  margin: 0 20%;
   vertical-align: top;
   align: center;
   overflow: auto;
@@ -383,6 +419,10 @@ overflow-x: hidden;
 .thumbnail-img:focus .thumbnail-img {
   transform: scale(1.05);
   transition: all .5s;
+}
+
+.content-img-inline-block {
+  width: 40%;
 }
 
 /*Video formatting*/
@@ -432,28 +472,18 @@ h3 {
   text-align: left;
 }
 
-.h3-watch-video {
-  font-weight: 600!important;
-  text-align: right!important;
-  cursor: pointer;
-}
-
-.h3-category-tag {
-  width: 120px;
-  font-size: 10px;
-  font-weight: 600!important;
-  line-height: 22px;
-  margin: 8px 0 10px 0;
-  color: white;
-  background-color: #2e3a66;
-  text-align: center;
-  cursor: pointer;
-}
-
 h4 {
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 20px;
+  text-align: left;
+}
+
+h5 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
   text-align: left;
 }
 
@@ -465,19 +495,43 @@ h6 {
   cursor: pointer;
 }
 
-.content-title {
-  font-size: 25px!important;
+.h3-watch-video {
+  font-weight: 600!important;
+  text-align: right!important;
+  cursor: pointer;
 }
 
-h5 {
-  display: inline;
+.h3-category-tag {
+  width: 120px;
+  font-family: 'Lato', sans-serif!important;
+  font-size: 10px;
+  font-weight: 600!important;
+  line-height: 22px;
+  margin: 8px 0 10px 0;
+  color: white;
+  background-color: #2e3a66;
+  text-align: center;
+  cursor: pointer;
+}
+
+.content-title {
+  font-size: 30px!important;
+  font-weight: bold;
 }
 
 p {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  font-size: 15px;
+  font-size: 12px;
+  line-height: 20px;
   text-align: left;
+}
+
+.caption {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 a {
