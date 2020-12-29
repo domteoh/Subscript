@@ -116,6 +116,7 @@ overflow-x: hidden;
 
   #banner {
     margin-top: 70px;
+    padding: 0 3%!important;
   }
 
   #banner .banner-img {
