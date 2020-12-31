@@ -52,7 +52,7 @@ overflow-x: hidden;
     width: 100%;
     height: 52px;
     padding-top: .75em;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px solid black;
     background-color:white;
     text-align: center;
     z-index: 2;
@@ -65,7 +65,7 @@ overflow-x: hidden;
     width: 100%;
     margin-top: 50px;
     padding: 2% 1% 2% 1%;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px solid black;
     text-align: center;
     font-family: 'Lato' sans-serif;
     font-size: 16px;
@@ -83,7 +83,7 @@ overflow-x: hidden;
     width: 100%;
     margin-top: 50px;
     padding: 2% 1% 2% 1%;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px solid black;
     text-align: center;
     font-family: 'Lato' sans-serif;
     font-size: 16px;
@@ -113,7 +113,7 @@ overflow-x: hidden;
     left: 43.1%;
     width: 210px;
     padding: 0 1% 1% 1%;
-    border: 1px dashed black;
+    border: 1px solid black;
     line-height: 40px;
     cursor: pointer;
     display: inline;
@@ -123,10 +123,20 @@ overflow-x: hidden;
     display: none;
   }
 
+  .point {
+    display: inline-block!important;
+    width: 40%;
+    margin: 70vh 30% 0 30%;
+    text-align: center;
+  }
+
   #banner {
-    margin-top: 100vh;
+    display: inline-block!important;
     margin-bottom: 0!important;
-    padding-top: 5vh;
+  }
+
+  #banner-horizontal {
+    display: none!important;
   }
 
   .banner-sticky {
@@ -218,10 +228,11 @@ overflow-x: hidden;
 }
 
 #nav {
+  display: none;
   width: 100%;
   height: 52px;
   padding-top: .75em;
-  border-bottom: 1px dashed black;
+  border-bottom: 1px solid black;
   background-color:white;
   text-align: center;
   z-index: 1;
@@ -245,12 +256,26 @@ overflow-x: hidden;
   top: 56px;
 }
 
+.point {
+  display: none;
+}
+
 #banner {
+  display: none;
   width: 100%;
   height: 50%;
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 2%;
+  text-align: center;
+  background-color: white;
+}
+
+#banner-horizontal {
+  width: 100%;
+  height: 100vh;
+  padding-left: 5%;
+  padding-right: 5%;
   text-align: center;
   background-color: white;
 }
@@ -319,7 +344,7 @@ overflow-x: hidden;
   align: center;
   padding: 15px;
   background-color: white;
-  border-top: 1px dashed black;
+  border-top: 1px solid black;
 }
 
 .footer-fixed {
@@ -328,7 +353,7 @@ overflow-x: hidden;
   align: center;
   padding: 15px;
   background-color: white;
-  border-top: 1px dashed black;
+  border-top: 1px solid black;
 }
 
 
@@ -378,6 +403,28 @@ overflow-x: hidden;
 .landing-img {
   width: 50%;
   margin: 32vh 25% 0 25%;
+}
+
+.index-note {
+  width: 250px;
+}
+
+.index-note-horizontal {
+  width: 400px;
+}
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+}
+
+.foot2 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
 }
 
 .arrow {
