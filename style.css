@@ -191,6 +191,10 @@ overflow-x: hidden;
     width: 100%!important;
   }
 
+  .caption {
+    text-align: left!important;
+  }
+
   .footer {
     padding: 1vh 0!important;
   }
