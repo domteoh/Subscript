@@ -128,19 +128,25 @@ overflow-x: hidden;
     display: inline-block!important;
     position: absolute;
     z-index: -1;
-    top: 75vh;
-    width: 40%;
-    margin: 0 30% 0 30%;
+    top: 67vh;
+    width: 60%;
+    margin: 0 20% 0 20%;
     text-align: center;
   }
 
-  #banner {
-    display: inline-block!important;
-    width: 100%;
-    padding: 0 5%;
+  .banner-container {
     margin: 100vh 0 0 0;
-    text-align: center;
+    width: 100%;
+    background-color: white;
     border-top: 10px solid black;
+  }
+
+  #banner {
+    display: block!important;
+    width: 270px;
+    margin: auto!important;
+    padding-top: 16%;
+    text-align: justify;
     background-color: white;
   }
 
@@ -274,12 +280,11 @@ overflow-x: hidden;
 }
 
 #banner-horizontal {
-  width: 100%;
-  height: 100vh;
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: center;
+  width: 600px;
+  margin: auto;
+  padding-top: 22vh;
   background-color: white;
+  text-align: center;
 }
 
 .sticky {
@@ -551,7 +556,9 @@ h6 {
 }
 
 h5 {
-  display: inline;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 p {
