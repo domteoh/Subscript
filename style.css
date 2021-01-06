@@ -150,7 +150,7 @@ overflow-x: hidden;
   }
 
   #banner .page-content {
-    width: 100%;
+    width: 100%!important;
     margin-top: 2%;
     padding: 0 2% 80px 2%!important;
     vertical-align: top;
@@ -362,25 +362,24 @@ overflow-x: hidden;
 
 /*About page styles*/
 #banner .page-content {
-  width: 100%;
-  margin-top: 2%;
-  padding: 0 25% 80px 25%;
+  width: 700px;
+  margin: auto;
+  padding: 0 0 80px 0;
   vertical-align: top;
-  align: center;
   overflow: auto;
 }
 
 #banner .page-content .content-media {
-  width: 80%;
-  margin: 0 10%;
+  width: 500px;
+  margin: 0 100px;
   vertical-align: top;
   align: center;
   overflow: auto;
 }
 
 #banner .page-content .content-main-media {
-  width: 60%;
-  margin: 0 20%;
+  width: 300px;
+  margin: 5px 200px;
   vertical-align: top;
   align: center;
   overflow: auto;
@@ -511,10 +510,10 @@ h6 {
   font-family: 'Lato', sans-serif!important;
   font-size: 10px;
   font-weight: 600!important;
-  line-height: 22px;
+  line-height: 20px;
   margin: 8px 0 10px 0;
   color: white;
-  background-color: #2e3a66;
+  background-color: #4c629e;
   text-align: center;
   cursor: pointer;
 }
@@ -548,5 +547,7 @@ a {
 
 .date {
   color: #6b6b6b!important;
-  line-height: 28px;
+  line-height: 30px;
+  margin-top: 2px;
+  font-style: italic;
 }

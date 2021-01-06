@@ -140,7 +140,7 @@ overflow-x: hidden;
     padding: 0 5%;
     margin: 100vh 0 0 0;
     text-align: center;
-    border-top: 1px solid black;
+    border-top: 10px solid black;
     background-color: white;
   }
 
@@ -526,7 +526,7 @@ h3 {
   line-height: 22px;
   margin: 8px 0 10px 0;
   color: white;
-  background-color: #2e3a66;
+  background-color: #4c629e;
   text-align: center;
   cursor: pointer;
 }
