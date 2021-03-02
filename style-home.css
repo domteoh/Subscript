@@ -67,6 +67,7 @@ overflow-x: hidden;
     background-color: white;
     display: none;
     border-bottom: 1px solid #cccccc;
+    z-index: 1;
   }
 
   .nav-logo {
@@ -112,7 +113,7 @@ overflow-x: hidden;
   }
 
   .footer {
-    padding: 1vh 0!important;
+    padding: 1vh 3%!important;
   }
 
   h6 {
