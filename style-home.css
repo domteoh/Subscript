@@ -24,24 +24,13 @@ overflow-x: hidden;
 /*mobile*/
 @media only screen and (max-width: 812px) {
 
-  .scroll-sign {
-    position: fixed;
-    bottom: 5%!important;
-    z-index: -1;
+  .header {
+    height: 85vh!important;
   }
 
-  .landing {
-    position: fixed;
-    height: 100vh;
-    background-image: url(img/paper.jpg);
-    background-size: cover;
-    background-position: center;
-    display: inline-block!important;
-    z-index: -1;
-  }
-
-  .header-logo {
-    display: none;
+  .home-container {
+    position: absolute;
+    top: 85vh!important;
   }
 
   #nav {
@@ -53,12 +42,12 @@ overflow-x: hidden;
     width: 100%;
     height: 52px;
     padding-top: .75em;
-    border-bottom: 1px solid black;
     background-color:white;
     text-align: center;
     z-index: 2;
     overflow: hidden;
     display: inline-block!important;
+    border-bottom: 1px solid #cccccc;
   }
 
   #nav-menu-mobile {
@@ -66,7 +55,6 @@ overflow-x: hidden;
     width: 100%;
     margin-top: 50px;
     padding: 2% 1% 2% 1%;
-    border-bottom: 1px solid black;
     text-align: center;
     font-family: 'Lato' sans-serif;
     font-size: 16px;
@@ -78,28 +66,11 @@ overflow-x: hidden;
     color: black;
     background-color: white;
     display: none;
-  }
-
-  #nav-menu-mobile-video {
-    width: 100%;
-    margin-top: 50px;
-    padding: 2% 1% 2% 1%;
-    border-bottom: 1px solid black;
-    text-align: center;
-    font-family: 'Lato' sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 40px;
-    cursor: pointer;
-    display: inline;
-    vertical-align: middle;
-    color: black;
-    background-color: white;
-    display: none;
+    border-bottom: 1px solid #cccccc;
   }
 
   .nav-logo {
-
+    display:inline-block!important;
   }
 
   .nav-icon {
@@ -111,111 +82,36 @@ overflow-x: hidden;
   }
 
   #nav-menu {
-    left: 43.1%;
-    width: 210px;
-    padding: 0 1% 1% 1%;
-    border: 1px solid black;
-    line-height: 40px;
-    cursor: pointer;
-    display: inline;
-    vertical-align: middle;
-    color: black;
-    background-color: white;
     display: none;
   }
 
-  .point {
-    display: inline-block!important;
-    position: absolute;
-    z-index: -1;
-    top: 67vh;
-    width: 60%;
-    margin: 0 20% 0 20%;
-    text-align: center;
-  }
-
-  .banner-container {
-    margin: 100vh 0 0 0;
-    width: 100%;
-    background-color: white;
-    border-top: 10px solid black;
-  }
-
   #banner {
-    display: block!important;
-    width: 270px;
-    margin: auto!important;
-    padding-top: 16%;
-    text-align: justify;
-    background-color: white;
-  }
-
-  #banner-horizontal {
-    display: none!important;
-  }
-
-  .banner-sticky {
-    padding-top: 5vh!important;
-  }
-
-  #banner .banner-img {
-    width: 96%!important;
-    height: auto!important;
-    padding: 2% 0 0 0 !important;
-  }
-
-  #banner .banner-text {
-    width: 100%!important;
-    height: auto!important;
-    margin-top: 0!important;
-    margin-bottom: 11%!important;
-    padding: 0 2%!important;
+    padding: 5% 3%!important;
   }
 
   .h3-watch-video {
     display: none!important;
   }
 
-  .main .category .category-box {
-    width: 80%!important;
-    display: inline-block;
-  }
-
-  .main .category .category-img {
-    width: 100%!important;
-    height: auto!important;
-    cursor: pointer;
-    overflow: hidden;
-  }
-
-  #banner .page-content {
-    width: 100%;
-    margin-top: 2%;
-    padding: 0 2% 80px 2%!important;
-    vertical-align: top;
-    align: center;
-    overflow: auto;
+  #banner .watch-main {
+    width: 90%!important;
+    margin: auto;
   }
 
   #banner .watch-main .watch-box .watch-img {
-    width: 90%!important;
+    width: 100%!important;
     margin: 2px 0 0 0!important;
     display: inline-block;
   }
 
   #banner .watch-main .watch-box .watch-text {
-    width: 90%!important;
-    margin: 2px 0 10% 2%!important;
+    width: 100%!important;
+    margin: 2px 0 10% 0!important;
     display: inline-block;
     vertical-align: top;
   }
 
   .footer {
-    padding: 1vh 0!important;
-  }
-
-  .footer-fixed {
-    position: relative!important;
     padding: 1vh 0!important;
   }
 
@@ -231,27 +127,37 @@ overflow-x: hidden;
 
 }
 
-.landing {
-  display: none;
-}
-
 .header {
+  position: fixed;
+  top: 20px;
+  height: 60vh;
   width: 100%;
-  background-color: white;
+  background-image: url(img/gif.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: #fcfcfc;
   text-align: center;
   z-index: -1;
 }
 
+.home-container {
+  position: absolute;
+  top: 60vh;
+  border-top: 1px solid #cccccc;
+}
+
 #nav {
-  display: none;
+  position: fixed!important;
+  top: 0;
   width: 100%;
   height: 52px;
   padding-top: .75em;
-  border-bottom: 1px solid black;
-  background-color:white;
+  background-color: white;
   text-align: center;
   z-index: 1;
   overflow: hidden;
+  border-bottom: 1px solid #cccccc;
 }
 
 #nav-mobile {
@@ -266,113 +172,31 @@ overflow-x: hidden;
   display: none;
 }
 
-.nav-Watch-sticky {
-  position: fixed!important;
-  top: 56px;
-}
-
-.point {
-  display: none;
-}
-
 #banner {
-  display: none;
-}
-
-#banner-horizontal {
-  width: 600px;
-  margin: auto;
-  padding-top: 22vh;
-  background-color: white;
+  width: 100%;
+  height: 50%;
+  padding: 3% 5% 5% 5%;
   text-align: center;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  margin-top: 0!important;
-  width: 100%;
-}
-
-#banner .banner-img {
-  width: 550px;
-  height: 100%;
-  padding: 2% 3% 0 3%;
-  align: right;
-  vertical-align: middle;
-  display: inline-block;
-  cursor: pointer;
-}
-
-#banner .banner-text {
-  width: 550px;
-  height: 100%;
-  margin-top: 2%;
-  padding: 0 3% 4% 3%;
-  vertical-align: top;
-  display: inline-block;
-  overflow: auto;
-}
-
-.banner-sticky {
-  padding-top: 7vh;
-}
-
-.main {
-  width: 100%;
-  padding: 0 5%;
   background-color: white;
-}
-
-.main .category {
-  padding: 2% 0 2% 0;
-  margin-bottom: 2%;
-  background-color: white;
-}
-
-.main .category .category-box {
-  width: 24%;
-  background-color: white;
-  display: inline-block;
-}
-
-.main .category .category-img {
-  height: 14vw;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.main .category .category-text {
-  padding: 0 5% 0 5%;
-  cursor: pointer;
 }
 
 .footer {
-  align: center;
+  width: 100%;
   padding: 15px;
-  background-color: white;
-  border-top: 1px solid black;
-}
-
-.footer-fixed {
-  position: fixed;
-  bottom: 0;
-  align: center;
-  padding: 15px;
-  background-color: white;
-  border-top: 1px solid black;
+  background-color: #212121;
 }
 
 
 /*Watch page styles*/
 #banner .watch-main {
-  width: 100%;
-  margin: 2% 0 40px 0;
+  width: 800px;
+  margin: auto;
 }
 
 #banner .watch-main .watch-box {
   width: 100%;
   display: inline-block;
+  margin-top: 3%;
 }
 
 #banner .watch-main .watch-box .watch-img {
@@ -387,64 +211,7 @@ overflow-x: hidden;
   vertical-align: top;
 }
 
-
-/*About page styles*/
-#banner .page-content {
-  width: 100%;
-  margin-top: 2%;
-  padding: 0 20% 80px 20%;
-  vertical-align: top;
-  align: center;
-  overflow: auto;
-}
-
-.about-text {
-  text-align: justify!important;
-}
-
-
-/*Content page styles*/
-
-
 /*Image formatting*/
-.landing-img {
-  width: 50%;
-  margin: 32vh 25% 0 25%;
-}
-
-.index-note {
-  width: 270px;
-}
-
-.index-note-horizontal {
-  width: 400px;
-}
-
-.foot {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 200px;
-}
-
-.foot2 {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 200px;
-}
-
-.arrow {
-  width: 10%;
-  height: auto;
-  margin: 25vh 45% 0 45%;
-}
-
-.header-logo {
-  width: 250px;
-  margin: 1.5% 0 0 0;
-  cursor: pointer;
-}
 
 .nav-logo {
   position: absolute;
@@ -453,30 +220,30 @@ overflow-x: hidden;
   height: 46px;
   width: auto;
   z-index: 1;
-  display: none;
+}
+
+.icon-container {
+  width: 200px;
+  position: fixed;
+  right: 32px;
+  top: 15px;
+  text-align: right;
 }
 
 .icon {
   width: 20px;
 }
 
-.thumbnail-img {
-  width: 100%;
-  margin: 0 4% 2% 0;
-}
-
-.category-img:hover .thumbnail-img,
-.thumbnail-img:focus .thumbnail-img {
-  transform: scale(1.05);
-  transition: all .5s;
+.icon-container {
+  width: 200px;
+  position: fixed;
+  right: 32px;
+  top: 15px;
+  text-align: right;
 }
 
 /*Video formatting*/
 
-.youtube {
-  padding: 53% 0 0 0;
-  position: relative;
-}
 
 /*Text formatting*/
 .nav-Home, .nav-About, .nav-Watch, .nav-Contact {
@@ -492,7 +259,7 @@ overflow-x: hidden;
 
 
 h1 {
-  font-family: 'Lato', sans-serif';
+  font-family: 'Lato', sans-serif;
   font-size: 20px;
   font-weight: 100;
   color: #444444;
@@ -501,7 +268,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 22px;
   font-weight: 100;
   color: black;
@@ -513,33 +280,23 @@ h2 {
 h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
   text-align: left;
-}
-
-.h3-watch-video {
-  font-weight: 600!important;
-  text-align: right!important;
-  cursor: pointer;
-}
-
-.h3-category-tag {
-  width: 120px;
-  font-size: 10px;
-  font-weight: 600!important;
-  line-height: 22px;
-  margin: 8px 0 10px 0;
-  color: white;
-  background-color: #4c629e;
-  text-align: center;
-  cursor: pointer;
 }
 
 h4 {
   font-family: 'Lato', sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+h5 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
   text-align: left;
 }
 
@@ -551,20 +308,40 @@ h6 {
   cursor: pointer;
 }
 
-.content-title {
-  font-size: 25px!important;
+.footer-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #cccccc;
+  padding: 0 5%;
 }
 
-h5 {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-weight: 400;
-  font-size: 16px;
+.h3-watch-video {
+  font-weight: 600!important;
+  text-align: right!important;
+  cursor: pointer;
+}
+
+.h3-category-tag {
+  width: 120px;
+  font-family: 'Lato', sans-serif!important;
+  font-size: 10px;
+  font-weight: 600!important;
+  line-height: 20px;
+  margin: 8px 0 10px 0;
+  color: white;
+  background-color: #4c629e;
+  text-align: center;
+  cursor: pointer;
 }
 
 p {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-size: 12px;
+  line-height: 20px;
   text-align: left;
 }
 
@@ -577,7 +354,7 @@ a {
 
 .date {
   color: #6b6b6b!important;
-  line-height: 28px;
+  line-height: 30px;
+  margin-top: 2px;
+  font-style: italic;
 }
-
-                                                                                                                                                                

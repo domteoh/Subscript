@@ -7,10 +7,12 @@ $(window).scroll(function () {
       $('#nav').addClass("sticky");
       $('#banner').addClass("banner-sticky");
       $('.nav-logo').fadeIn();
+      $('.icon-container').fadeIn();
     } else {
       $('#nav').removeClass("sticky");
       $('#banner').removeClass("banner-sticky");
       $('.nav-logo').fadeOut(2);
+      $('.icon-container').fadeOut(2);
     }
   });
 

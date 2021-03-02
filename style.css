@@ -43,12 +43,12 @@ overflow-x: hidden;
     width: 100%;
     height: 52px;
     padding-top: .75em;
-    border-bottom: 1px solid black;
     background-color:white;
     text-align: center;
     z-index: 2;
     overflow: hidden;
     display: inline-block!important;
+    border-bottom: 1px solid #cccccc;
   }
 
   #nav-menu-mobile {
@@ -56,7 +56,6 @@ overflow-x: hidden;
     width: 100%;
     margin-top: 50px;
     padding: 2% 1% 2% 1%;
-    border-bottom: 1px solid black;
     text-align: center;
     font-family: 'Lato' sans-serif;
     font-size: 16px;
@@ -68,13 +67,13 @@ overflow-x: hidden;
     color: black;
     background-color: white;
     display: none;
+    border-bottom: 1px solid #cccccc;
   }
 
   #nav-menu-mobile-video {
     width: 100%;
     margin-top: 50px;
     padding: 2% 1% 2% 1%;
-    border-bottom: 1px solid black;
     text-align: center;
     font-family: 'Lato' sans-serif;
     font-size: 16px;
@@ -86,6 +85,7 @@ overflow-x: hidden;
     color: black;
     background-color: white;
     display: none;
+    border-bottom: 1px solid #cccccc;
   }
 
   .nav-logo {
@@ -101,16 +101,6 @@ overflow-x: hidden;
   }
 
   #nav-menu {
-    left: 43.1%;
-    width: 210px;
-    padding: 0 1% 1% 1%;
-    border: 1px solid black;
-    line-height: 40px;
-    cursor: pointer;
-    display: inline;
-    vertical-align: middle;
-    color: black;
-    background-color: white;
     display: none;
   }
 
@@ -174,21 +164,30 @@ overflow-x: hidden;
     overflow: auto;
   }
 
-  #banner .watch-main .watch-box .watch-img {
+  #banner .watch-main {
     width: 90%!important;
+    margin: auto;
+  }
+
+  #banner .watch-main .watch-box .watch-img {
+    width: 100%!important;
     margin: 2px 0 0 0!important;
     display: inline-block;
   }
 
   #banner .watch-main .watch-box .watch-text {
-    width: 90%!important;
-    margin: 2px 0 10% 2%!important;
+    width: 100%!important;
+    margin: 2px 0 10% 0!important;
     display: inline-block;
     vertical-align: top;
   }
 
   .content-img-inline-block {
     width: 100%!important;
+  }
+
+  .content-img-armbandlavalier {
+    width: 80%!important;
   }
 
   .caption {
@@ -226,11 +225,11 @@ overflow-x: hidden;
   width: 100%;
   height: 52px;
   padding-top: .75em;
-  border-bottom: 1px solid black;
-  background-color:white;
+  background-color: white;
   text-align: center;
   z-index: 1;
   overflow: hidden;
+  border-bottom: 1px solid #cccccc;
 }
 
 #nav-mobile {
@@ -320,10 +319,9 @@ overflow-x: hidden;
 }
 
 .footer {
-  align: center;
+  width: 100%;
   padding: 15px;
-  background-color: white;
-  border-top: 1px solid black;
+  background-color: #212121;
 }
 
 .footer-fixed {
@@ -331,20 +329,20 @@ overflow-x: hidden;
   bottom: 0;
   align: center;
   padding: 15px;
-  background-color: white;
-  border-top: 1px solid black;
+  background-color: #212121;
 }
 
 
 /*Watch page styles*/
 #banner .watch-main {
-  width: 100%;
-  margin: 2% 0 40px 0;
+  width: 800px;
+  margin: auto;
 }
 
 #banner .watch-main .watch-box {
   width: 100%;
   display: inline-block;
+  margin-top: 3%;
 }
 
 #banner .watch-main .watch-box .watch-img {
@@ -362,7 +360,7 @@ overflow-x: hidden;
 
 /*About page styles*/
 #banner .page-content {
-  width: 700px;
+  width: 600px;
   margin: auto;
   padding: 0 0 80px 0;
   vertical-align: top;
@@ -371,7 +369,7 @@ overflow-x: hidden;
 
 #banner .page-content .content-media {
   width: 500px;
-  margin: 0 100px;
+  margin: 0 50px;
   vertical-align: top;
   align: center;
   overflow: auto;
@@ -379,7 +377,7 @@ overflow-x: hidden;
 
 #banner .page-content .content-main-media {
   width: 300px;
-  margin: 5px 200px;
+  margin: 5px 150px;
   vertical-align: top;
   align: center;
   overflow: auto;
@@ -387,6 +385,7 @@ overflow-x: hidden;
 
 .about-text {
   text-align: justify!important;
+  margin-top: 10%;
 }
 
 
@@ -410,6 +409,15 @@ overflow-x: hidden;
   display: none;
 }
 
+.icon-container {
+  width: 200px;
+  position: fixed;
+  right: 32px;
+  top: 15px;
+  text-align: right;
+  display: none;
+}
+
 .icon {
   width: 20px;
 }
@@ -426,6 +434,10 @@ overflow-x: hidden;
 }
 
 .content-img-inline-block {
+  width: 40%;
+}
+
+.content-img-armbandlavalier {
   width: 40%;
 }
 
@@ -471,7 +483,7 @@ h2 {
 h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
   text-align: left;
 }
@@ -479,7 +491,7 @@ h3 {
 h4 {
   font-family: 'Lato', sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -497,6 +509,16 @@ h6 {
   font-size: 20px;
   text-align: center;
   cursor: pointer;
+}
+
+.footer-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #cccccc;
+  padding: 0 5%;
 }
 
 .h3-watch-video {
